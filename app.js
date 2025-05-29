@@ -125,8 +125,10 @@ backspaceButton.textContent = "←";
 backspaceAndEnterRow.append(backspaceButton);
 
 const enterButton = document.createElement("button")
-enterButton.addEventListener("click", checkGuess());
-enterButton.textContent = "✔";
+enterButton.addEventListener("click", () =>
+    checkGuess());
+enterButton.setAttribute("id", "enterButton")
+enterButton.textContent = "✔"
 backspaceAndEnterRow.append(enterButton);
 
 document.onkeydown = function (evt) {
