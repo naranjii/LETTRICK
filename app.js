@@ -12,11 +12,18 @@ const rows = 6
 const columns = 5
 let currentColumn = 0;
 let currentRow = 0;
-let lettrick = "PODRE"
-let lettrickMap = {}
-for (let index = 0; index < lettrick.length; index++) {
-    lettrickMap[lettrick[index]] = index
+let lettrick = ""
+async function fetchLettrick() {
+    const response = await fetch('https://ptbr5letterword-api.vercel.app/random-word');
+    const data = await response.json();
+    lettrick = data.word;
 }
+await fetchLettrick();
+let lettrickMap = {}
+    for (let index = 0; index < lettrick.length; index++) {
+        lettrickMap[lettrick[index]] = index;
+    }
+
 const guesses = []
 
 for (let rowIndex = 0; rowIndex < rows; rowIndex++) {
@@ -127,6 +134,8 @@ backspaceAndEnterRow.append(backspaceButton);
 const enterButton = document.createElement("button")
 enterButton.addEventListener("click", () =>
     checkGuess());
+enterButton.addEventListener("click", () =>
+    console.log(lettrick));
 enterButton.setAttribute("id", "enterButton")
 enterButton.textContent = "✔"
 backspaceAndEnterRow.append(enterButton);
