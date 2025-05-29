@@ -62,10 +62,10 @@ const checkGuess = () => {
          }
     }
         if(guess === lettrick) {
-            window.alert("🎉 🎉🥳 🎉🥳🎊🎁 congrats🎊🎊🎉 🥳 👏 💝💐🏆 🥂👏🍾 ✨ 🏆 🎊")
+            window.alert("🎉 🎉🥳 🎉🥳🎊🎁🎊🎊🎉 🥳 congrats🎊🎊🎉 🥳 👏 💝💐🏆 🥂👏🍾 ✨ 🏆 🎊")
             return} {
         if(currentRow === rows -1){
-        window.alert("GOOD GAME")
+        window.alert(`𝔾𝕆𝕆𝔻 𝔾𝔸𝕄𝔼. A palavra era: ${lettrick}`)
         } else {
         moveToNextRow()
         }
