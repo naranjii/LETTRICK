@@ -13,6 +13,7 @@ const columns = 5
 let currentColumn = 0;
 let currentRow = 0;
 let lettrick = ""
+
 async function fetchLettrick() {
     const response = await fetch('https://ptbr5letterword-api.vercel.app/random-word');
     const data = await response.json();
