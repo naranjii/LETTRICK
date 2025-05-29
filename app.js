@@ -135,8 +135,6 @@ backspaceAndEnterRow.append(backspaceButton);
 const enterButton = document.createElement("button")
 enterButton.addEventListener("click", () =>
     checkGuess());
-enterButton.addEventListener("click", () =>
-    console.log(lettrick));
 enterButton.setAttribute("id", "enterButton")
 enterButton.textContent = "✔"
 backspaceAndEnterRow.append(enterButton);
