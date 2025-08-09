@@ -6,7 +6,7 @@
 <h4><i>LETTRICK</i> is the set of files that indexes html5, imports javascript and styles, to render a guess the word game.</h4>
 
 ---
-<h3>🔗 Play at Vercel: <a href="https://lettrick.vercel.app">L E T T R I C K Live</a>
+<h3>🔗 Play LIVE on Vercel: <a href="https://lettrick.vercel.app">L E T T R I C K Live</a>
 
 <h4>⭐ Features:</h3>
 
